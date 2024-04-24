@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -78,9 +79,9 @@ WSGI_APPLICATION = 'ProgramaAcademico.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'programa',
-        'USER': 'localhost',
-        'PASSWORD': '2468',
+        'NAME': 'programapw',
+        'USER': 'root',
+        'PASSWORD': 'laval18ok',
         'HOST': 'localhost',
         'PORT': '3306',
     }

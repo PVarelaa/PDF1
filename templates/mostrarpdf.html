@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar PDF</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: justify; /* Centra el texto horizontalmente */
+    margin-left: 100px; /* Margen izquierdo de 20px */
+    margin-right: 190px; /* Margen derecho de 20px */
+}
+
+.container {
+    width: 50%; /* Ajusta el ancho del contenedor */
+    margin: 50px auto; /* Centra el contenedor verticalmente */
+    border: 1px solid #ccc; /* Agrega un borde al contenedor */
+    padding: 20px; /* Añade espacio alrededor del contenido */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra al contenedor */
+    
+}
+
+.container p {
+    margin-bottom: 10px; /* Agrega espacio entre los párrafos */
+}
+h4{
+    text-align: right;
+}
+    </style>
+</head>
+<body>
+
+    
+    <h3>I.IDENTIFICACION</h3>
+    <p>A. Nombre de la Materia: {{ pdf.materia}}</p>
+    <p>B. Codigo: {{pdf.codigo}}</p>
+    <p>C. Condicion: {{pdf.condicion}}</p>
+    <p>D. Carrera: {{pdf.carrera}}</p>
+    <p>E. Semestre: {{pdf.semestre}}</p>
+    <p>F. Curso: {{pdf.curso}}</p>
+    <p>G. Requisitos: {{pdf.requisitos}}</p>
+    <p>H. Carga Horaria Semanal: {{pdf.cargasemanal}}</p>
+    <p>I. Carga Horaria Semestral: {{pdf.cargasemestral}}</p>
+    <p>OB: Obligatoria - OBC: Obligatoria Complementaria – OPT: Optativa</p>
+
+    <h3>II. FUNDAMENTACIÓN</h3>
+    <p>{{pdf.fundamentacion}}</p>
+    <h3>III. OBJETIVOS</h3>
+    <p>{{pdf.objetivos}}</p>
+    <h3>IV. CONTENIDO</h3>
+    <p>{{pdf.contenido}}</p>
+    <h3>V.METODOLOGIA</h3>
+    <p>{{pdf.metodologia}}</p>
+    <h3>VI.EVALUACION</h3>
+    <p>{{pdf.evaluacion}}</p>
+    <h3>VII. METODOLOGÍA</h3>
+    <p>{{pdf.metodologia}}</p>
+    <!-- Aquí puedes mostrar más información del PDF según tus necesidades -->
+    <footer>
+        <hr>
+        <h4>Página | 3</h4>
+    </footer>
+</body>
+</html>

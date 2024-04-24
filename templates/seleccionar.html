@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Selección de Carrera y Materia</title>
+</head>
+<body>
+    <h2>Seleccionar una opcion</h2>
+    <form action="{% url 'mostrarpdf' %}" method="get" id="filtroForm">
+       <select id="cBoCarrera">
+            <option value="KTII">Ingenieria en Informatica</option>
+            <option value="KTIC">Ingenieria Civil</option>
+            <option value="KTIE">Ingenieria en Electricidad</option>
+            <option value="KTIL">Ingenieria en Electronica</option>
+       </select>
+        <select id="cBoMateria" name="Materia">
+
+        </select>      
+        <!-- Agrega el botón de enviar el formulario -->
+        <button type="submit" id="mostrarbtn">Mostrar</button>
+    </form>
+    <script src="{% static 'js/mat.js' %}"></script>
+</body>
+</html>
